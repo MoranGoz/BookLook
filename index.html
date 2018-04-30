@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="node_modules\bootstrap\dist\" >
+         <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css" type="text/css">
+         <link rel="stylesheet" type="text/css" href="node_modules\font-awesome\css\font-awesome.css">
+         <link rel="stylesheet" href="style.css" type="text/css">
         <title>BookLook</title>
 </head>
 <body>
@@ -10,27 +11,32 @@
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
                     <div class="page-header">
-                      <h1>BookLook <i class="fa fa-eye" aria-hidden="true"></i></h1>
+                      <h1>BookLook <i class="fas fa-eye"></i></h1>
+                      <hr>
                     </div>
                     <section class="Search">
                             <h2>Search by ISBN</h2>
                    </section>
-                   <!---->
                    
-        <form class="beer-form">
-                <div class="form-group">
-                  <input type="text"
-                    class="SEARCH-input-form-control" id='SEARCH'
-                    placeholder="ISBN number">
-                </div>
-                
+        <form class="form-group">
+                  <input type="text" id='searchByISBN' placeholder="ISBN number">
                 <div>
-                <button class="searchByISBN" type="button">search</button>
+                <button class="search btn btn-primary" type="button">search</button>
               </div>
-
+            </div>
+        </div>
+    </div>
+              <hr>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+              <script id="Book-container" type="text/x-handlebars-template" >
+                        <h2>{{title}}</h2>
+                        <p class ="book-description">{{description}}</p>
+                        <h1>written by + {{authors}}</h1> 
+                        <img src="{{imageLinks.smallThumbnail}}"> 
+              </script>
         <script src="node_modules/jquery/dist/jquery.js"> </script>
-        <script src="booklook\node_modules\bootstrap"></script>
-        <script src="node_module/scripts/bootstrap.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"> </script>
+        <script src="main.js"></script>
        
 </body>
 

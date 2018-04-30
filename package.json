@@ -1,7 +1,6 @@
 {
   "name": "bookkeeper",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +11,10 @@
     "awesome": "0.0.7",
     "bootstrap": "^4.1.0",
     "font": "0.0.4",
+    "font-awesome": "^4.7.0",
     "handlebars": "^4.0.11",
     "jquery": "3.2.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
